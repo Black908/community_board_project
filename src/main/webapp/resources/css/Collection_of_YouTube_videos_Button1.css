@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.btnRegister4{
+    float: left;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 3300;
+    width: 152%;
+    cursor: pointer;
+    margin-left: 144%;
+    margin-top: -8%;
+    margin-bottom: 24px;
+}
+
+.btnRegister5{
+    float: left;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 3300;
+    width: 152%;
+    cursor: pointer;
+    margin-left: 364%;
+    margin-top: -50%;
+}
+
+.btnRegister6{
+    float: left;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 3300;
+    width: 152%;
+    cursor: pointer;
+    margin-left: 582%;
+    margin-top: -50%;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.dao.logboardDAO">
+	
+	<select id="selectBoardCount" resultType="int">
+		SELECT
+			count(*)
+		FROM LOG_BOARD
+		WHERE 1 = 1
+	</select>
+	
+	<select id="selectBoardList" resultType="map">
+		SELECT
+			* 
+		FROM 
+			LOG_BOARD
+		<if test="start != null and start != '' and end != null and end != ''">
+			LIMIT #{start}, #{end}
+		</if>
+	</select>
+	
+	<select id="detailBoardView" resultType="map">
+		SELECT
+			*
+		FROM 
+			Post
+		WHERE lb_no = #{seq}
+	</select>
+	
+	<insert id="insertBoard" parameterType="map">
+	<selectKey keyProperty="lb_no" resultType="integer" order="BEFORE">
+		SELECT UUID_SHORT()
+	</selectKey>
+		INSERT INTO LOG_BOARD
+		(
+			lb_no,
+			lb_subject,
+			lb_content,
+			lb_date,
+			lb_user_id
+		)
+		VALUES(
+			#{lb_no},
+			#{s_lb_subject},
+			#{s_lb_content},
+			NOW(),
+			#{s_lb_regid}
+		)
+	</insert>
+	
+	<update id="updateBoard" parameterType="map">
+		UPDATE LOG_BOARD
+			SET lb_subject = #{s_lb_subject},
+				lb_content = #{s_lb_content}
+			WHERE lb_no = #{seq}
+	</update>
+	
+	<delete id="deleteBoard" parameterType="map">
+		DELETE 
+		FROM LOG_BOARD 
+		WHERE lb_no=#{seq}
+	</delete>
+
+	<insert id="insertUser" parameterType="map">
+		INSERT INTO LB_USER
+		(
+			nickname,
+			user_id,
+			user_pw,
+			reg_dt,
+			gender,
+			phone,
+			mail
+		)
+		VALUES(
+			#{s_nickname},
+			#{s_userid},
+			#{s_password},
+			NOW(),
+			#{s_gender},
+			#{s_phone},
+			#{s_mail}
+		)
+	</insert>
+	
+	<select id="userIdOverlapCheck" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM 
+			LB_USER
+		WHERE user_id = #{s_userid}
+	</select>
+	
+	<select id="userLoginCheck" resultType="int">
+		SELECT
+			COUNT(*)
+		FROM 
+			LB_USER
+		WHERE user_id = #{loginId}
+		AND user_pw = #{loginPw}
+	</select>
+	
+</mapper>

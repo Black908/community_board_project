@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+.comments-details, .total-comments {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #D8D8D8;
+}
+.comments-details {
+    padding: 15px 15px;
+}
+.comments .comments .dropdown,
+.comments .dropup {
+    position: relative;
+}
+.comments .but111 {
+    background-color: transparent;
+    border: none;
+}
+.comments .comment-box {
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 10px 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.bacc111{
+    background-color: #EFEFEF;
+}
+
+.comments .add-comment {
+    background-color: #EFEFEF;
+    border: none;
+    position: relative;
+    margin-bottom: 50px;
+}
+.comments .commenter-pic {
+    width:  0px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.comments .add-comment .inut111 {
+    border-top: 0px;
+    border-bottom: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    outline: 0px;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+    font-weight: normal;
+}
+.comments .add-comment input:focus {
+    border-color: #03a9f4;
+    border-width: 2px;
+}
+
+.but222{
+    background-color: #03a9f4;
+    color: #fff;
+    margin: 10px 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 0px;
+    border: none;
+    padding: .375rem .75rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
+
+.comments .add-comment .butt111 {
+    background-color: #03a9f4;
+    color: #fff;
+    margin: 10px 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 0px;
+}
+.comments .commenter-name .comment-time {
+    font-weight: normal;
+    margin-left: 8px;
+    font-size: 15px;
+}
+.comments .comment-txt {
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 0px 15px;
+}
+.comments .commenter-name {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.comments .comment-meta {
+    font-size: 14px;
+    color: #333;
+    padding: 2px 5px 0px;
+    line-height: 20px;
+    float: right;
+}
+.comments .reply-box {
+    display: none;
+}
+.comments .replied {
+    background-color: #fff;
+    width: 95%;
+    float: right;
+    margin-top: 15px;
+}
+
+/*======Responsive CSS=======*/
+@media (max-width: 767px){
+.comments .commenter-name {
+    font-size: 13px;
+    top: -5px;
+}
+.comments .commenter-pic {
+    width: 40px;
+    height: 40px;
+}
+.comments .commenter-name {
+  display: block;
+}
+.comments .commenter-name .comment-time{
+  display: block;
+  margin-left: 0px;
+}
+}
+
+*, ::after, ::before {
+	box-sizing: border-box
+}
+
+.a111 {
+	color: #000000;
+	text-decoration: none;
+}
+
+.bisot111{
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.tab111{
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+    width: 95%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.point111 {
+	cursor: pointer
+}
+
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+    margin-top: 50px;
+}
+
+.btn {
+	color: #212529;
+	padding: .375rem .75rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+
+}

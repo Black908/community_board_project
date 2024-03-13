@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Content */
+.grid {
+	list-style: none;
+    width: 165px;
+    float: right;
+    margin-top: 8px;
+}
+
+/* Icons button */
+.icobutton {
+	font-size: 3em;
+	position: relative;
+	color: #000000;
+	border: 0;
+	background: none;
+	overflow: visible;
+}

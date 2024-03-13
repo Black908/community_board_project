@@ -1,0 +1,150 @@
+/* 
+화면명 : 게시판 목록
+ */
+ 
+@charset "UTF-8";
+/*!
+ * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */ /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+@media print {
+	*, :before, :after {
+		color: #000 !important;
+		text-shadow: none !important;
+		background: transparent !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+    padding-top: 8%;
+	margin-right: auto;
+	margin-left: 17%;
+}
+
+@media ( min-width :1200px) {
+	.container {
+		width: 194%;
+	}
+}
+
+.row2 {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-md-1211
+	{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media ( min-width :992px) {
+	.col-md-1211 {
+		float: left;
+	}
+	.col-md-1211 {
+		width: 100%;
+	}
+}
+
+.th123 {
+	text-align: left;
+}
+
+.td123 {
+	text-align: left;
+}
+
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+    height: 175px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td,
+	.table>tbody>tr>td, .table>tfoot>tr>td {
+	padding: 10px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+
+.table>thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+.table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>th,
+	.table>thead:first-child>tr:first-child>th, .table>caption+thead>tr:first-child>td,
+	.table>colgroup+thead>tr:first-child>td, .table>thead:first-child>tr:first-child>td
+	{
+	border-top: 0;
+}
+
+.table-hover>tbody>tr:hover {
+	background-color: #f5f5f5;
+}
+
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+}
+
+.pagination>li>a, .pagination>li>span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #428bca;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover,
+	.pagination>.active>span:hover, .pagination>.active>a:focus,
+	.pagination>.active>span:focus {
+	z-index: 2;
+	color: #fff;
+	cursor: default;
+	background-color: #428bca;
+	border-color: #428bca;
+}
+
+.pager li {
+	display: inline;
+}
+
+.pager li>a, .pager li>span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+}
+
+.pager li>a:hover, .pager li>a:focus {
+	text-decoration: none;
+	background-color: #eee;
+}

@@ -1,0 +1,129 @@
+/* 
+ȭ��� : �Խ��� ���
+ */
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-image : url('/resources/img/AMONG_US_PAINTING.jpg');
+  background-size : 100% 100%;
+  height: 100vh;
+
+}
+
+#out {
+ width: 100%;
+ text-align: center;
+ }
+#in {
+ display: inline-block;
+ }
+
+#Ltext1{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#Ltext2{
+    color: #fff;
+    text-decoration: none;   
+}
+
+#Ltext3{
+    color: #fff;
+    text-decoration: none;   
+}
+
+.div11{
+		overflow:hidden;
+		height:auto;
+}
+
+ .Logh2{
+	color: #fff;
+ }
+
+.Mem1{
+    color: #fff;
+    margin-left: 15px;
+}
+
+.Mem2{
+    color: #fff;
+    margin-left: 13px;
+    padding-left: 100px;
+}
+
+ .menu1{
+	 height: 3vh;
+	 flex-direction: column;
+	 justify-content: center;
+ }
+
+.admin-sidenav {
+    
+    width: auto;
+	height: auto;
+	margin-left: -5%; 
+}
+.admin-sidenav a {
+    display:block;
+	text-decoration: none; 
+}
+.admin-sidenav li {
+	text-align: justify;
+	padding: .5rem;
+	padding-left: 1rem;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	background-color: #000;
+	border: 1px solid #787878; /*�⺻ ����: 333 */
+}
+.admin-sidenav li a {
+	color: #fff; 
+}
+
+.admin-sidenav li a:active {
+	border-color: #02d3f5; 
+}
+
+.admin-sidenav li:hover {
+	border-radius: 0 .5rem .5rem 0;
+	border-color: #02d3f5;
+	-webkit-transform: translate(30px, 0px);
+	transform: translate(30px, 0px);
+	background: -webkit-linear-gradient(left, #006a7b, #002340);
+	background: linear-gradient(to right, #006a7b, #002340); 
+}
+
+.admin-sidenav li:active {
+	border-color: #02d3f5; 
+}
+
+.div2 {
+    padding-top: 15px;
+}
+.div3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.textjh1 {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btnRegister3{
+    float: left;
+    margin-top: 1.4%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.5%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 3300;
+    width: 10%;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+/* 
+화면명 : 게시판 메뉴
+ */
+
+@charset "utf-8";
+/* CSS Document */
+
+/*!
+ * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */ /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+
+.div1 {
+	margin: 0;
+    background-color: #000000;
+    width: 232px
+        
+}
+
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none
+}
+
+.nav>li {
+	position: relative;
+	display: block
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px
+}
+
+
+/* CSS Document */
+
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+}
+
+.sidebar-nav li:first-child a {
+    background-color: #000E32;
+}
+.sidebar-nav li:nth-child(2):before {
+    background-color: #ec1b5a;   
+}
+.sidebar-nav li:nth-child(3):before {
+    background-color: #79aefe;   
+}
+.sidebar-nav li:nth-child(4):before {
+    background-color: #314190;   
+}
+.sidebar-nav li:nth-child(5):before {
+    background-color: #279636;   
+}
+.sidebar-nav li:nth-child(6):before {
+    background-color: #7d5d81;   
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .3s ease-in;
+      -moz-transition:  width .3s ease-in;
+       -ms-transition:  width .3s ease-in;
+            transition: width .3s ease-in;
+}
+
+.sidebar-nav li a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;    
+}
+
+
+
+

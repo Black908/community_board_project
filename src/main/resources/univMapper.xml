@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.univ.school.DBDAO">
+	
+	<select id="selectTestMap" resultType="map">
+		SELECT *
+		FROM user_tbl
+		WHERE 1=1
+			AND user_id = #{login_id} AND user_pw = #{login_pw} 
+	</select>
+	
+	<!-- <insert id="insertBoard" parameterType="map">
+	<selectKey keyProperty="키로 쓸 이름" resultType="integer" order="BEFORE">
+		SELECT UUID_SHORT()
+		17자 int
+	</selectKey>
+		INSERT INTO LOG_BOARD
+		(
+			lb_no,
+			lb_subject,
+			lb_content,
+			lb_date,
+			lb_user_id
+		)
+		VALUES(
+			#{위의 select key},
+			#{s_lb_subject},
+			#{s_lb_content},
+			NOW(),
+			#{s_lb_regid}
+		)
+	</insert> -->
+	
+	<!-- <insert id="ionsert">
+		isnert from
+		values (#{id}, #{pw})
+	</insert> -->
+</mapper>
